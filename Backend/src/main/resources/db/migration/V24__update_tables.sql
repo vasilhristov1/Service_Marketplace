@@ -1,0 +1,14 @@
+ALTER TABLE transactions
+DROP FOREIGN KEY transactions_ibfk_2;
+
+ALTER TABLE transactions
+CHANGE COLUMN offer_id transaction_type VARCHAR(50) NOT NULL;
+
+ALTER TABLE transactions
+CHANGE COLUMN timestamp payment_date DATETIME NOT NULL;
+
+ALTER TABLE review
+CHANGE COLUMN isActive isDeleted BOOLEAN NOT NULL DEFAULT FALSE;
+
+ALTER TABLE service
+ADD COLUMN isDeleted BOOLEAN NOT NULL DEFAULT FALSE;

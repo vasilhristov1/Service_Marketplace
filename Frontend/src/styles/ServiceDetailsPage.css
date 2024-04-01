@@ -1,0 +1,144 @@
+.service-details-container {
+    position: relative; 
+    max-width: 2000px;
+    margin: auto;
+    padding: 100px; 
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 3;
+    font-size: 22px;
+    margin-top: 200px;
+}
+
+.service-title {
+    margin-bottom: 40px; 
+    color: #333;
+    font-size: 32px; 
+    font-weight: bold;
+    line-height: 1.5; 
+}
+
+.service-detail {
+    margin-bottom: 25px; 
+    color: #666;
+    font-size: 20px; 
+    line-height: 1.8; 
+}
+
+.service-detail label {
+    font-weight: bold;
+    font-size: 22px; 
+}
+
+.service-detail p {
+    display: inline;
+    margin-left: 5px;
+    color: #333;
+}
+
+.pay-button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #3c96f0;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pay-button:hover {
+    background-color: #5db6ee;
+}
+
+.image-upload-button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #3c96f0;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+    font-size: 16px; 
+    font-weight: bold;
+}
+
+.image-upload-button:hover {
+    background-color: #5db6ee;
+}
+
+.service-details-container h2 {
+    text-align: center;
+    margin-top: 0; /* Изчистете горния марджин, ако има такъв */
+  }
+
+  .service-details-container .carousel .slide img {
+    margin-top: 190px;
+    max-height: 400px;
+    max-width: 520px;
+    margin-bottom: 30px;
+  }
+
+  .add-review-btn{
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #3c96f0;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .add-review-btn:hover{
+    background-color: #5db6ee;
+  }
+
+  .reviews-btn{
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #3c96f0;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .reviews-btn:hover{
+    background-color: #5db6ee;
+  }
+
+  @media screen and (max-width: 768px) {
+    .service-details-container {
+      padding: 50px;
+      font-size: 18px;
+    }
+  
+    .service-title {
+      font-size: 28px;
+    }
+  
+    .service-detail,
+    .service-detail label,
+    .service-detail p {
+      font-size: 16px;
+    }
+  
+    .pay-button,
+    .image-upload-button,
+    .add-review-btn,
+    .reviews-btn {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  
+    .service-details-container .carousel .slide img {
+      margin-top: 100px;
+      max-height: 300px;
+      max-width: 320px;
+      margin-bottom: 20px;
+    }
+  }

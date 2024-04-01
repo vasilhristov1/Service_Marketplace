@@ -1,0 +1,70 @@
+.review-box-service {
+    width: 70%; /* Adjusted width */
+    margin: 20px auto;
+    padding: 20px; /* Added padding for better spacing */
+    border: 1px solid #ddd; /* Added border for a container-like appearance */
+}
+
+.review-info {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box
+}
+
+.review-info h3 {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box
+}
+
+.review-info p {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box
+}
+
+.review-carousel {
+    max-width: 300px; /* Adjust as needed */
+    margin-top: 15px;
+}
+
+.review-carousel img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Additional styles for the carousel arrows, if needed */
+.slick-prev,
+.slick-next {
+    font-size: 24px;
+    color: #333;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    color: #000;
+}
+
+.edit-details-button {
+    margin: 10px;
+    padding: 10px 25px;
+    border: none;
+    background-color:  #4caf50; 
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+    font-size: 20px; 
+    font-weight: bold;}
+
+.edit-details-button:hover {
+    background-color: #5db6ee; 
+}
+

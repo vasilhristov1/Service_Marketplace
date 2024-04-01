@@ -1,0 +1,65 @@
+/* Filters.css */
+
+.filter-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #ccc;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-top: 15px;
+    font-size: 0.9rem;
+  }
+  
+  .rc-slider {
+    margin-top: 10px;
+  }
+  
+  .apply-button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+  
+  .apply-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Styles for FilterElement component */
+  .filter-element {
+    margin-bottom: 15px;
+  }
+  
+  .filter-title {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .filter-options {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .filter-option {
+    margin-bottom: 5px;
+  }
+  
+  .filter-checkbox {
+    margin-right: 5px;
+  }
+  

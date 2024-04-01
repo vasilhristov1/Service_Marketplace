@@ -1,0 +1,78 @@
+.sign-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(73,143,199,1) 0%, rgba(12,24,91,1) 100%);
+    color: white;
+    
+}
+
+
+.sign-up h1 {
+    font-size: 36px;
+    text-align: center;
+
+}
+
+.sign-up .input-box {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin: 30px 0;
+}
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: white;
+}
+.sign-up button{
+    width: 100%;
+    height: 45px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+    transition: .5s;
+}
+
+.sign-up button:hover {
+    background: rgb(195, 237, 55);
+}
+.sign-up .have-register {
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.have-register p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.have-register p a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: rgba(1, 1, 1, 0.656);
+    margin-top: 5px;
+  }

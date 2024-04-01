@@ -1,0 +1,52 @@
+version: '3.8'
+
+services:
+  # MySQL database
+  db:
+    image: mysql:latest
+    environment:
+      MYSQL_DATABASE: service_marketplace
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+      MYSQL_USER: borislav.nikolov
+      MYSQL_PASSWORD: borislav.nikolov123
+    ports:
+      - "3306:3306"
+
+  # Flyway service
+  flyway:
+    image: flyway/flyway:7.10.0
+    depends_on:
+      - db
+    volumes:
+      - ./src/main/resources/db/migration:/flyway/sql
+    environment:
+      - FLYWAY_URL=jdbc:mysql://db:3306/service_marketplace
+      - FLYWAY_USER=borislav.nikolov
+      - FLYWAY_PASSWORD=borislav.nikolov123
+      - FLYWAY_LOCATIONS=filesystem:/flyway/sql
+    entrypoint: [ "sh", "-c", "sleep 3 && flyway migrate" ]
+    restart: on-failure
+
+  # Spring Boot application
+  app:
+    image: openjdk:17
+    container_name: services-app
+    depends_on:
+      - db
+      - flyway
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/service_marketplace
+      SPRING_DATASOURCE_USERNAME: borislav.nikolov
+      SPRING_DATASOURCE_PASSWORD: borislav.nikolov123
+      # Enable remote debugging on port 5005
+      JAVA_TOOL_OPTIONS: "-agentlib:jdwp=transport=dt_socket,address=*:5005,server=y,suspend=n"
+    ports:
+      - "8080:8080"
+      - "5005:5005"  # Expose the debugging port
+    volumes:
+      - ./target:/app
+    command: [ "java", "-jar", "/app/marketplace-0.0.1-SNAPSHOT.jar" ]
+    restart: on-failure
+    env_file: ../app.env
+volumes:
+  spring-data:

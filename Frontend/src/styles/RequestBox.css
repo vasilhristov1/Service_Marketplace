@@ -1,0 +1,45 @@
+.request-box {
+    background-color: #f8f8f8;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    transition: transform 0.2s ease-in-out;
+    overflow: hidden;
+}
+
+.request-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.request-box p {
+    margin: 10px 0;
+    color: #333; 
+    font-size: 16px; 
+    line-height: 1.4; 
+    overflow: hidden;
+    white-space: normal;
+}
+
+
+
+.request-box button {
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.request-box button:hover {
+    background-color: #2980b9;
+}
+
+.offer-form {
+    margin-top: 20px;
+}

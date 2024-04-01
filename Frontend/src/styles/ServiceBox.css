@@ -1,0 +1,68 @@
+
+.service-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    margin: 10px;
+    width: calc(25% - 20px);
+  }
+
+  .service-box .service-title h3 {
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.service-box .service-price p {
+    font-size: 1.2rem;
+    color: #1e82cf;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-style: oblique;
+    font-weight: 1000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.service-box .service-description p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    line-height: 8cqh;
+}
+
+.service-box .service-details {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+  
+  @media (max-width: 768px) {
+    .service-box {
+      width: calc(50% - 20px);
+    }
+  
+    .page-container {
+      flex-direction: column;
+    }
+  
+    .filter, .services {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .services {
+      order: 1;
+    }
+  
+    .filter {
+      order: 2;
+    }
+  }
+  
+  .service-box h3 {
+    margin-bottom: 10px;
+  }
+  

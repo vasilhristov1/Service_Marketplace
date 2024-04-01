@@ -1,0 +1,168 @@
+.page-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .filter {
+    width: 15%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .services {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+  }
+  
+  .services header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+.service-box {
+  background-color: #fff;
+    display: flex;
+    width: 60%;
+    height: 60%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+  }
+  
+  .service-box .photo {
+    width: 30%;
+    margin-right: 20px;
+    
+  }
+  
+  .service-box .service-info {
+    width: 70%;
+  }
+  
+  .service-box h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .service-box p {
+    margin-bottom: 10px;
+    line-height: 2;
+  }
+  
+  .service-box button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .service-box button:hover {
+    background-color: #7db3f0; 
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    color: #ffffff;
+    margin-top: 10px;
+    
+  }
+  
+  .pagination li {
+    margin: 0 5px;
+    display: inline-block;
+  }
+  
+  .pagination a {
+    
+    padding: 8px 12px;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .pagination a:hover {
+    background-color: #eee;
+  }
+  
+  .pagination .active a {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  
+  .pagination .disabled a {
+    
+    cursor: not-allowed;
+  }
+  
+  .pagination span {
+    padding: 8px 12px;
+    
+    border-radius: 4px;
+    margin: 0 5px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .page-container {
+      flex-direction: column;
+    }
+  
+    .filter {
+      width: 100%;
+      order: 2;
+    }
+  
+    .services {
+      width: 100%;
+      order: 1;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .service-box {
+      width: 70%;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .service-box {
+      width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .page-container {
+      flex-direction: column;
+    }
+  
+    .filter {
+      width: 100%;
+      order: 2;
+    }
+  
+    .services {
+      width: 100%;
+      order: 1;
+    }
+  
+    .service-box {
+      width: 100%;
+    }
+  }
+  

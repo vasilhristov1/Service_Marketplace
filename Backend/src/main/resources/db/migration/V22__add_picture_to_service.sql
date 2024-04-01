@@ -1,0 +1,2 @@
+ALTER TABLE service
+ADD COLUMN picture VARCHAR(255);

@@ -1,0 +1,62 @@
+.review-add-form-container {
+    width: 70%; /* Adjusted width */
+    margin: 20px auto;
+    padding: 20px; /* Added padding for better spacing */
+    border: 1px solid #ddd; /* Added border for a container-like appearance */
+}
+
+/* Style for the review-add-form-title */
+.review-add-form-title {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Style for the review-add-form */
+.review-add-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style for the form-control */
+.form-control {
+    margin-bottom: 20px;
+}
+
+/* Style for the label */
+.form-control label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Style for the input fields */
+.review-description-input,
+.review-rating-input,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+/* Style for the submit button */
+.submit-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Style for the hr (horizontal line) */
+hr {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Style for the bottom hr */
+hr.bottom {
+    margin-top: 20px;
+}

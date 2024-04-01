@@ -1,0 +1,2 @@
+ALTER TABLE service
+add column is_vip BOOLEAN NOT NULL DEFAULT FALSE;

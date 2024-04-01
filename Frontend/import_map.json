@@ -1,0 +1,8 @@
+{
+    "imports": {
+      "preact":  "https://esm.sh/preact@10.15.1",
+      "preact/": "https://esm.sh/preact@10.15.1/",
+      "react-icons/cg":  "https://cdn.jsdelivr.net/gh/urielch/react-icons-cg@1.0.9/mod.ts",
+      "react-icons/cg/": "https://cdn.jsdelivr.net/gh/urielch/react-icons-cg@1.0.9/ico/"
+    }
+  }
